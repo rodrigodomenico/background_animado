@@ -1,0 +1,53 @@
+div {
+      padding: 5px;
+      margin: 15px;
+          }
+
+
+* {
+      padding: 0;
+      margin: 0;
+          }
+
+       .degrade {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+
+      /* gerar backgrounds e cores https://colorhunt.co/palette/179481 */
+      background: linear-gradient(45deg, #112031, #152D35, #345B63, #D4ECDD);
+      background-size: 300% 300%;
+      animation: colors 15s ease infinite;
+    }
+
+    @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .text {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+      }
+    }
+
+     .text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #fff;
+      border: 5px solid #fff;
+      border-radius: 100px;
+      padding: 10px 10px;
+      text-align: center
+    }
